@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oficio Pro — Organiza. Crece. Gana Más. | Fairfield CT & Westchester NY</title>
+<meta name="description" content="Asesoría bilingüe para contratistas latinos en Fairfield CT y Westchester NY. Organiza tu negocio, consigue más trabajo y crece. Bilingual business support for trades contractors.">
+<meta name="keywords" content="contratistas, landscaping, painting, bilingual, Fairfield CT, Westchester NY, business support, organiza tu negocio">
+<!-- Open Graph -->
+<meta property="og:title" content="Oficio Pro — Organiza. Crece. Gana Más.">
+<meta property="og:description" content="Asesoría bilingüe para contratistas en Fairfield CT y Westchester NY. Bilingual business support for trades contractors.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://oficiopro.work">
+<!-- Canonical -->
+<link rel="canonical" href="https://oficiopro.work">
+<style>
+  :root {
+    --navy:   #1B3A6B;
+    --teal:   #1A7A6E;
+    --teal-l: #E8F4F2;
+    --mid:    #D0E8E4;
+    --amber:  #F5A623;
+    --amber2: #FEF3CD;
+    --gray:   #555;
+    --light:  #F9FAFB;
+    --white:  #fff;
+    --black:  #222;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--light); color: var(--black); }
+
+  /* ── TOP BAR ────────────────────────────────────────────────────────── */
+  .topbar {
+    background: var(--navy);
+    padding: 10px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .topbar-brand { font-size: 18px; font-weight: 800; color: var(--white); letter-spacing: -0.5px; }
+  .topbar-brand span { color: var(--amber); }
+  .topbar-contact { display: flex; align-items: center; gap: 12px; }
+  .topbar-phone {
+    font-size: 12px; color: var(--mid); text-decoration: none;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .topbar-phone:hover { color: var(--white); }
+  .topbar-wa {
+    background: #25D366; color: var(--white);
+    padding: 6px 14px; border-radius: 20px;
+    font-size: 12px; font-weight: 700; text-decoration: none;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .topbar-wa:hover { background: #1DA851; }
+  @media (max-width: 480px) {
+    .topbar-phone { display: none; }
+  }
+
+  /* ── HERO ──────────────────────────────────────────────────────────── */
+  .hero {
+    position: relative;
+    background:
+      linear-gradient(160deg, rgba(27,58,107,0.88) 0%, rgba(22,70,62,0.84) 100%),
+      url('https://images.unsplash.com/photo-1761135149034-1d0c084826db?w=1400&q=80&auto=format&fit=crop')
+      center/cover no-repeat;
+    padding: 64px 24px 52px;
+    text-align: center;
+    border-bottom: 4px solid var(--teal);
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.28) 100%);
+    pointer-events: none;
+  }
+  .hero > * { position: relative; }
+
+  .logo { font-size: 46px; font-weight: 800; color: var(--white); letter-spacing: -1px; text-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .logo span { color: var(--amber); }
+  .logo-badge { display:block; margin: 0 auto 8px; width:100px; height:100px; }
+  .tagline {
+    font-size: 17px; font-weight: 700; color: var(--mid);
+    margin-top: 10px; line-height: 1.6; text-shadow: 0 1px 6px rgba(0,0,0,0.3);
+  }
+  .tagline em {
+    font-size: 13px; font-weight: 400; font-style: italic;
+    color: #FFE5B0; display: block; margin-top: 3px;
+  }
+  .geo { color: #FFE5B0; font-size: 12px; margin-top: 12px; letter-spacing: .3px; }
+  .free-strip {
+    margin: 24px auto 0; max-width: 520px;
+    background: rgba(232,244,242,0.92); border-radius: 8px;
+    padding: 10px 20px; color: var(--teal); font-weight: 700; font-size: 13px;
+    line-height: 1.5; backdrop-filter: blur(4px);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  }
+  .free-strip em {
+    display: block; font-style: italic; font-weight: 400;
+    font-size: 11px; opacity: .8; margin-top: 2px;
+  }
+  /* Hero CTA buttons */
+  .hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+  .btn-wa {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #25D366; color: var(--white);
+    padding: 13px 26px; border-radius: 50px;
+    font-size: 14px; font-weight: 700; text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25); transition: transform .15s;
+  }
+  .btn-wa:hover { transform: scale(1.04); }
+  .btn-call {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(255,255,255,0.12); color: var(--white);
+    border: 2px solid rgba(255,255,255,0.4);
+    padding: 13px 26px; border-radius: 50px;
+    font-size: 14px; font-weight: 700; text-decoration: none;
+    backdrop-filter: blur(4px); transition: background .15s;
+  }
+  .btn-call:hover { background: rgba(255,255,255,0.22); }
+
+  /* ── SECTION TITLES ─────────────────────────────────────────────────── */
+  .section-title { font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
+  .section-title .sep { font-size: 15px; font-weight: 400; color: var(--gray); }
+  .section-sub   { font-size: 13px; color: var(--gray); font-style: italic; margin-bottom: 28px; line-height: 1.5; }
+
+  /* ── TESTIMONIALS ───────────────────────────────────────────────────── */
+  .testimonials { background: var(--white); padding: 52px 24px; }
+  .testimonials-inner { max-width: 900px; margin: 0 auto; }
+  .testi-grid { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 28px; }
+
+  .testi-card {
+    flex: 1 1 250px;
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid #E8E8E8;
+    padding: 20px 18px 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07), 0 0 0 1px rgba(0,0,0,0.03);
+    transition: box-shadow .2s;
+  }
+  .testi-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.11); }
+
+  .testi-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .testi-author-row { display: flex; align-items: center; gap: 10px; }
+  .testi-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--teal); color: var(--white);
+    font-size: 16px; font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .testi-card.amber .testi-avatar { background: var(--amber); color: #222; }
+  .testi-card.navy  .testi-avatar { background: var(--navy); }
+  .testi-name { font-size: 13px; font-weight: 700; color: var(--black); line-height: 1.2; }
+  .testi-role { font-size: 11px; color: var(--gray); margin-top: 2px; }
+  .case-tag {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 10px; font-weight: 600; font-style: italic;
+    color: var(--gray); margin-top: 10px; opacity: .8;
+  }
+  .testi-stars { display: flex; align-items: center; gap: 6px; margin-bottom: 10px; }
+  .stars-row { display: flex; gap: 1px; }
+  .stars-row svg { width: 14px; height: 14px; fill: #FBBC04; }
+  .testi-when { font-size: 10px; color: #aaa; }
+  .testi-quote {
+    font-size: 13px; color: var(--black); line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  .testi-quote strong { color: var(--teal); }
+  .testi-card.amber .testi-quote strong { color: #9A6400; }
+  .testi-card.navy  .testi-quote strong { color: var(--navy); }
+  .testi-en {
+    font-size: 11px; color: var(--gray); font-style: italic;
+    border-top: 1px solid #f0f0f0; padding-top: 8px; margin-top: 8px; line-height: 1.5;
+  }
+  .testi-disclaimer {
+    text-align: center; margin-top: 18px;
+    font-size: 11px; color: #aaa; font-style: italic;
+  }
+
+  /* ── WHY US ─────────────────────────────────────────────────────────── */
+  .why {
+    padding: 52px 24px; text-align: center;
+    background-color: var(--teal-l);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M 40 0 L 0 0 0 40' fill='none' stroke='%231A7A6E' stroke-width='0.7' stroke-opacity='0.15'/%3E%3C/svg%3E");
+  }
+  .pillars {
+    display: flex; flex-wrap: wrap; gap: 16px;
+    justify-content: center; max-width: 800px; margin: 0 auto;
+  }
+  .pillar {
+    flex: 1 1 190px; max-width: 220px;
+    background: var(--white); border-radius: 12px;
+    padding: 22px 16px; text-align: center;
+    box-shadow: 0 2px 10px rgba(26,122,110,0.1);
+  }
+  .pillar-icon { font-size: 28px; margin-bottom: 10px; }
+  .pillar h3 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+  .pillar h3 em { font-size: 11px; font-weight: 400; color: var(--gray); font-style: italic; display: block; margin-top: 2px; }
+  .pillar p { font-size: 12px; color: var(--gray); line-height: 1.5; margin-top: 7px; }
+
+  /* ── SERVICES ────────────────────────────────────────────────────────── */
+  .services { padding: 52px 24px; background: var(--light); }
+  .services-inner { max-width: 900px; margin: 0 auto; }
+  .cards { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 28px; }
+  .card {
+    flex: 1 1 340px;
+    background: var(--white); border-radius: 16px;
+    border-top: 5px solid var(--teal);
+    padding: 28px 24px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    transition: box-shadow .2s;
+  }
+  .card:hover { box-shadow: 0 6px 28px rgba(0,0,0,0.11); }
+  .card.navy { border-top-color: var(--navy); }
+
+  .card-icon { margin-bottom: 16px; }
+  .card-icon svg { display: block; }
+
+  .card-badge {
+    display: inline-block; padding: 3px 12px; border-radius: 20px;
+    font-size: 10px; font-weight: 800; letter-spacing: .5px;
+    color: var(--white); background: var(--teal); margin-bottom: 12px;
+  }
+  .card.navy .card-badge { background: var(--navy); }
+  .card-title { font-size: 22px; font-weight: 800; color: var(--navy); }
+  .card-title em { font-size: 13px; font-weight: 400; color: var(--gray); display: block; font-style: italic; margin-top: 3px; }
+  .card-mode { font-size: 12px; color: var(--gray); margin: 9px 0 14px; line-height: 1.6; }
+  .card-mode em { font-style: italic; display: block; }
+  .price-box {
+    background: var(--teal); border-radius: 10px;
+    padding: 14px; text-align: center; margin-bottom: 14px; color: var(--white);
+  }
+  .card.navy .price-box { background: var(--navy); }
+  .price-main { font-size: 32px; font-weight: 800; }
+  .price-sub  { font-size: 11px; opacity: .8; margin-top: 3px; }
+  .price-note { font-size: 11px; color: var(--gray); font-style: italic; margin-bottom: 14px; }
+  .includes-title {
+    font-size: 11px; font-weight: 700; color: var(--teal);
+    text-transform: uppercase; letter-spacing: .5px; margin-bottom: 10px;
+  }
+  .card.navy .includes-title { color: var(--navy); }
+  .includes { list-style: none; }
+  .includes li {
+    padding: 6px 0 6px 18px; position: relative;
+    font-size: 13px; color: var(--black); line-height: 1.4;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .includes li:last-child { border-bottom: none; }
+  .includes li::before { content: "•"; position: absolute; left: 0; color: var(--teal); font-weight: 900; }
+  .card.navy .includes li::before { color: var(--navy); }
+  .includes li em { display: block; font-size: 11px; color: var(--gray); font-style: italic; }
+  .custom-note {
+    margin-top: 16px; padding: 10px 14px;
+    background: var(--teal-l); border-radius: 8px;
+    border-left: 3px solid var(--teal);
+    font-size: 12px; color: var(--teal); line-height: 1.5;
+  }
+  .custom-note em { display: block; font-style: italic; margin-top: 3px; opacity: .85; }
+  .card.navy .custom-note { background: #EAF0F8; border-left-color: var(--navy); color: var(--navy); }
+
+  /* ── HOW IT WORKS ───────────────────────────────────────────────────── */
+  .how {
+    padding: 52px 24px; text-align: center;
+    background-color: var(--white);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Ccircle cx='11' cy='11' r='1.3' fill='%231A7A6E' fill-opacity='0.1'/%3E%3C/svg%3E");
+  }
+  .steps {
+    display: flex; flex-wrap: wrap; gap: 0;
+    max-width: 740px; margin: 28px auto 0; justify-content: center;
+  }
+  .step {
+    flex: 1 1 160px; max-width: 185px;
+    padding: 0 12px; position: relative; text-align: center;
+  }
+  .step:not(:last-child)::after {
+    content: "→"; position: absolute; right: -10px; top: 20px;
+    color: var(--mid); font-size: 22px; font-weight: 900;
+  }
+  .step-num {
+    width: 46px; height: 46px; border-radius: 50%;
+    background: var(--teal); color: var(--white);
+    font-size: 18px; font-weight: 800; line-height: 46px;
+    margin: 0 auto 10px;
+    box-shadow: 0 3px 10px rgba(26,122,110,0.3);
+  }
+  .step h4 { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+  .step h4 em { font-size: 11px; font-weight: 400; font-style: italic; color: var(--gray); display: block; margin-top: 1px; }
+  .step p { font-size: 11px; color: var(--gray); line-height: 1.4; margin-top: 5px; }
+
+  /* ── ROI ─────────────────────────────────────────────────────────────── */
+  .roi {
+    background: var(--navy); padding: 44px 24px; text-align: center;
+    border-top: 4px solid var(--teal);
+  }
+  .roi-headline { font-size: 21px; font-weight: 800; color: var(--amber); line-height: 1.4; }
+  .roi-headline em { display: block; font-size: 14px; font-weight: 400; font-style: italic; color: #FFE5B0; margin-top: 5px; }
+  .roi-sub { font-size: 13px; color: var(--mid); margin-top: 10px; line-height: 1.6; }
+  .roi-math {
+    display: inline-flex; flex-wrap: wrap; gap: 16px;
+    justify-content: center; margin-top: 26px;
+  }
+  .roi-card {
+    background: rgba(255,255,255,.07); border: 1px solid rgba(208,232,228,0.4);
+    border-radius: 14px; padding: 18px 22px; min-width: 150px; text-align: center;
+    backdrop-filter: blur(4px);
+  }
+  .roi-num { font-size: 30px; font-weight: 800; color: var(--amber); }
+  .roi-lbl { font-size: 11px; color: var(--mid); margin-top: 5px; line-height: 1.4; }
+
+  /* ── CTA ──────────────────────────────────────────────────────────────── */
+  .cta { background: var(--teal); padding: 56px 24px; text-align: center; }
+  .cta h2 { font-size: 26px; font-weight: 800; color: var(--white); line-height: 1.4; }
+  .cta h2 em { display: block; font-size: 16px; font-weight: 400; font-style: italic; color: var(--teal-l); margin-top: 4px; }
+  .cta p { font-size: 13px; color: var(--teal-l); margin: 10px 0 28px; line-height: 1.6; }
+  .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .wa-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: #25D366; color: var(--white);
+    padding: 15px 32px; border-radius: 50px;
+    font-size: 15px; font-weight: 700; text-decoration: none;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25); transition: transform .15s, box-shadow .15s;
+  }
+  .wa-btn:hover { transform: scale(1.04); box-shadow: 0 6px 22px rgba(0,0,0,0.3); }
+  .wa-icon { font-size: 20px; }
+  .call-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(255,255,255,0.15); color: var(--white);
+    border: 2px solid rgba(255,255,255,0.5);
+    padding: 15px 28px; border-radius: 50px;
+    font-size: 14px; font-weight: 700; text-decoration: none;
+    transition: background .15s;
+  }
+  .call-btn:hover { background: rgba(255,255,255,0.25); }
+  .cta-note { font-size: 11px; color: var(--teal-l); margin-top: 18px; opacity: .85; line-height: 1.7; }
+
+  /* ── FOOTER ───────────────────────────────────────────────────────────── */
+  footer {
+    background: var(--navy); padding: 24px 24px; text-align: center;
+    font-size: 11px; color: #4A6A9A; border-top: 2px solid var(--teal);
+    line-height: 2;
+  }
+  footer a { color: var(--mid); text-decoration: none; }
+  footer a:hover { color: var(--white); }
+
+  /* ── FLOATING WHATSAPP BUTTON (mobile) ───────────────────────────────── */
+  .float-wa {
+    display: none;
+    position: fixed; bottom: 20px; right: 20px; z-index: 200;
+    background: #25D366; color: var(--white);
+    width: 56px; height: 56px; border-radius: 50%;
+    align-items: center; justify-content: center;
+    font-size: 26px; text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    transition: transform .15s;
+  }
+  .float-wa:hover { transform: scale(1.1); }
+
+  /* ── RESPONSIVE ───────────────────────────────────────────────────────── */
+  @media (max-width: 600px) {
+    .logo { font-size: 36px; }
+    .step:not(:last-child)::after { display: none; }
+    .roi-math { flex-direction: column; align-items: center; }
+    .testi-grid { flex-direction: column; }
+    .cards { flex-direction: column; }
+    .float-wa { display: flex; }
+    .hero-ctas { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════════════════ -->
+<nav class="topbar">
+  <div class="topbar-brand">Oficio<span>Pro</span></div>
+  <div class="topbar-contact">
+    <a href="tel:+12036149524" class="topbar-phone">📞 (203) 614-9524</a>
+    <a href="https://wa.me/12036149524?text=Hola,%20me%20interesa%20saber%20m%C3%A1s%20sobre%20Oficio%20Pro" class="topbar-wa">
+      💬 WhatsApp
+    </a>
+  </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════════════════════════ -->
+<section class="hero">
+  <svg class="logo-badge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" aria-label="Oficio Pro logo">
+    <circle cx="90" cy="90" r="86" fill="#1B3A6B"/>
+    <circle cx="90" cy="90" r="86" fill="none" stroke="#1A7A6E" stroke-width="5"/>
+    <circle cx="90" cy="90" r="78" fill="none" stroke="#1A7A6E" stroke-width="1" opacity="0.3"/>
+    <g transform="translate(28,20) scale(3.2)" stroke="white" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M7 11v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h3a4 4 0 0 0 4-4V6a2 2 0 0 1 4 0v5h3a2 2 0 0 1 2 2l-1 5a2 3 0 0 1-2 2H9a3 3 0 0 1-3-3"/>
+    </g>
+    <circle cx="144" cy="36" r="14" fill="#F5A623"/>
+    <polyline points="138,36 142,41 151,29" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="90" y="148" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="800" fill="white" letter-spacing="3.5">OFICIO</text>
+    <line x1="50" y1="153" x2="130" y2="153" stroke="#1A7A6E" stroke-width="1.5"/>
+    <text x="90" y="168" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="800" fill="#F5A623" letter-spacing="6">PRO</text>
+  </svg>
+  <div class="logo">Oficio<span>Pro</span></div>
+  <div class="tagline">
+    Organiza. Crece. Gana Más.
+    <em>Get Organized. Grow. Win More.</em>
+  </div>
+  <div class="geo">Fairfield County, CT &nbsp;·&nbsp; Westchester County, NY</div>
+  <div class="free-strip">
+    ✓ Todas las apps y plataformas que usamos son gratuitas para ti
+    <em>All apps and platforms we set up are completely free for you to keep</em>
+  </div>
+  <div class="hero-ctas">
+    <a href="https://wa.me/12036149524?text=Hola,%20me%20interesa%20saber%20m%C3%A1s%20sobre%20Oficio%20Pro" class="btn-wa">
+      💬 Escríbenos por WhatsApp / Message us
+    </a>
+    <a href="tel:+12036149524" class="btn-call">
+      📞 Llamada gratis / Free call
+    </a>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ═══════════════════════════════════════════════════════ -->
+<section class="testimonials">
+  <div class="testimonials-inner">
+    <div style="text-align:center">
+      <div class="section-title">Lo que escucharás de nuestros clientes <span class="sep"> / What you'll hear from clients like you</span></div>
+      <div class="section-sub">Resultados típicos de contratistas en Fairfield CT y Westchester NY / Typical results from contractors in Fairfield CT and Westchester NY</div>
+    </div>
+    <div class="testi-grid">
+
+      <div class="testi-card">
+        <div class="testi-header">
+          <div class="testi-author-row">
+            <div class="testi-avatar">C</div>
+            <div>
+              <div class="testi-name">Carlos M.</div>
+              <div class="testi-role">🌿 Landscaper · Stamford, CT</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-stars">
+          <div class="stars-row">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+          </div>
+          <span class="testi-when">hace 3 semanas</span>
+        </div>
+        <div class="testi-quote">
+          "Llevaba años sin saber cuánto ganaba de verdad. En una tarde me armaron <strong>la contabilidad, las facturas y el sistema de clientes.</strong> La semana siguiente mandé mi primer presupuesto profesional — y conseguí el trabajo."
+        </div>
+        <div class="testi-en">"For years I had no idea what I was actually making. In one afternoon they set up my accounting, invoicing, and client system. The next week I sent my first professional estimate — and landed the job."</div>
+        <div class="case-tag">* Caso representativo / Representative case</div>
+      </div>
+
+      <div class="testi-card amber">
+        <div class="testi-header">
+          <div class="testi-author-row">
+            <div class="testi-avatar">M</div>
+            <div>
+              <div class="testi-name">María R.</div>
+              <div class="testi-role">🌱 Gardener · Greenwich, CT</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-stars">
+          <div class="stars-row">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+          </div>
+          <span class="testi-when">hace 1 mes</span>
+        </div>
+        <div class="testi-quote">
+          "Antes mis clientes me encontraban solo por recomendación. Ahora <strong>aparezco en Google</strong> cuando alguien busca jardinerías en el área. En dos semanas ya tenía tres consultas nuevas — sin hacer nada extra."
+        </div>
+        <div class="testi-en">"Before, clients only found me by word of mouth. Now I show up on Google when someone searches for gardeners nearby. Within two weeks I already had three new inquiries — without doing anything extra."</div>
+        <div class="case-tag">* Caso representativo / Representative case</div>
+      </div>
+
+      <div class="testi-card navy">
+        <div class="testi-header">
+          <div class="testi-author-row">
+            <div class="testi-avatar">R</div>
+            <div>
+              <div class="testi-name">Roberto A.</div>
+              <div class="testi-role">🎨 Painter · White Plains, NY</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-stars">
+          <div class="stars-row">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.39 7.26H19l-5.56 4.03 2.12 6.54L10 15.27l-5.56 3.56 2.12-6.54L1 8.26h6.61z"/></svg>
+          </div>
+          <span class="testi-when">hace 2 semanas</span>
+        </div>
+        <div class="testi-quote">
+          "Lo que más me cambió fue Thumbtack. Perdía trabajos porque no respondía a tiempo. <strong>Ahora respondo en minutos</strong> — gané cuatro trabajos el primer mes. Solo con eso, el servicio se pagó varias veces."
+        </div>
+        <div class="testi-en">"What changed everything was Thumbtack. I used to miss leads for not responding fast enough. Now I reply in minutes — I won four jobs my first month. Just with that, the service paid for itself many times over."</div>
+        <div class="case-tag">* Caso representativo / Representative case</div>
+      </div>
+
+    </div>
+    <p class="testi-disclaimer">* Casos representativos basados en resultados típicos de contratistas en el área. / Representative cases based on typical results for contractors in the area.</p>
+  </div>
+</section>
+
+<!-- ══ WHY US ══════════════════════════════════════════════════════════════ -->
+<section class="why">
+  <div style="text-align:center">
+    <div class="section-title">¿Por qué Oficio Pro? <span class="sep"> / Why Oficio Pro?</span></div>
+    <div class="section-sub">La única asesoría bilingüe, local y tecnológica para contratistas en el área<br>The only bilingual, local, tech-powered advisor for contractors in the area</div>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-icon">🗣️</div>
+      <h3>100% Bilingüe <em>100% Bilingual</em></h3>
+      <p>Todo en español y en inglés — sin barreras, sin confusión. Everything in Spanish and English.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">📍</div>
+      <h3>Local y Presente <em>Local &amp; Present</em></h3>
+      <p>Conocemos Fairfield CT y Westchester NY. We work with you in person or by video.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">🤖</div>
+      <h3>Tecnología Moderna <em>Modern Tech</em></h3>
+      <p>Las herramientas más modernas — gratuitas para ti. All modern tools, free for you to keep.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">💰</div>
+      <h3>Sin Contratos <em>No Contracts</em></h3>
+      <p>Sin compromisos a largo plazo. No long-term commitment. If no results, you don't keep paying.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ════════════════════════════════════════════════════════════ -->
+<section class="services">
+  <div class="services-inner">
+    <div style="text-align:center">
+      <div class="section-title">Nuestros Servicios <span class="sep"> / Our Services</span></div>
+      <div class="section-sub">Diseñados para contratistas como tú — de 1 a 10 personas<br>Built for contractors like you, from solo operators to small teams</div>
+    </div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-icon">
+          <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="11" y="10" width="32" height="38" rx="5" stroke="#1A7A6E" stroke-width="2.2" fill="#E8F4F2"/>
+            <rect x="20" y="5" width="14" height="9" rx="3.5" stroke="#1A7A6E" stroke-width="2" fill="white"/>
+            <line x1="19" y1="24" x2="36" y2="24" stroke="#D0E8E4" stroke-width="1.8"/>
+            <line x1="19" y1="31" x2="36" y2="31" stroke="#D0E8E4" stroke-width="1.8"/>
+            <line x1="19" y1="38" x2="30" y2="38" stroke="#D0E8E4" stroke-width="1.8"/>
+            <path d="M15 24L17.5 26.5L22 21" stroke="#F5A623" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15 31L17.5 33.5L22 28" stroke="#F5A623" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="card-badge">SERVICIO 1 / SERVICE 1</div>
+        <div class="card-title">Organiza tu Negocio <em>Get Organized</em></div>
+        <div class="card-mode">
+          Configuración única · 4–6 horas · En persona o por video
+          <em>One-time setup · 4–6 hours · In person or by video</em>
+        </div>
+        <div class="price-box">
+          <div class="price-main">$400</div>
+          <div class="price-sub">pago único / one-time</div>
+        </div>
+        <div class="price-note">Sin contratos · Apps y plataformas 100% gratuitas / No contracts · All tools 100% free to keep</div>
+        <div class="includes-title">Qué incluye / What's included:</div>
+        <ul class="includes">
+          <li>Perfil de Google Business reclamado y optimizado con fotos
+              <em>Google Business Profile claimed, optimised &amp; photos added</em></li>
+          <li>Cuenta de mensajería profesional con respuesta automática
+              <em>Business messaging account with auto-reply configured</em></li>
+          <li>Perfil en Thumbtack: fotos, descripción, alertas inmediatas de leads
+              <em>Thumbtack profile: photos, description &amp; instant lead alerts</em></li>
+          <li>Sistema de facturación con plantillas de presupuesto bilingues
+              <em>Invoicing system with bilingual estimate templates</em></li>
+          <li>Configuración básica de contabilidad: ingresos, gastos, P&amp;L mensual
+              <em>Basic accounting: income, expenses &amp; monthly P&L</em></li>
+          <li>CRM simple: pipeline de Lead → Trabajo Ganado → Cobrado
+              <em>Simple CRM: Lead → Job Won → Invoiced</em></li>
+          <li>Llamada de seguimiento a las 2 semanas incluida
+              <em>2-week follow-up call included</em></li>
+        </ul>
+        <div class="custom-note">
+          Adaptamos cada servicio a lo que tu negocio necesita — no todo aplica igual para todos.
+          <em>We tailor every step to your business — not every item applies to every contractor.</em>
+        </div>
+      </div>
+
+      <div class="card navy">
+        <div class="card-icon">
+          <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="34" width="9" height="14" rx="2.5" fill="#1B3A6B" opacity="0.25"/>
+            <rect x="22" y="25" width="9" height="23" rx="2.5" fill="#1B3A6B" opacity="0.45"/>
+            <rect x="38" y="14" width="9" height="34" rx="2.5" fill="#1A7A6E"/>
+            <polyline points="9,30 25,18 42,10" stroke="#F5A623" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <polygon points="42,5 49,10 42,15" fill="#F5A623"/>
+          </svg>
+        </div>
+        <div class="card-badge">SERVICIO 2 / SERVICE 2</div>
+        <div class="card-title">Consigue Más Trabajo <em>Win More Jobs</em></div>
+        <div class="card-mode">
+          Mensual · Cancela cuando quieras
+          <em>Monthly · Cancel anytime</em>
+        </div>
+        <div class="price-box">
+          <div class="price-main">$250</div>
+          <div class="price-sub">por mes / per month</div>
+        </div>
+        <div class="price-note">Primer mes con descuento · Sin contratos / First month discounted · No contracts</div>
+        <div class="includes-title">Qué incluye / What's included:</div>
+        <ul class="includes">
+          <li>Gestión activa de Thumbtack: respondemos a leads en minutos por ti
+              <em>Active Thumbtack management: we respond to leads in minutes on your behalf</em></li>
+          <li>Seguimiento automático de presupuestos sin respuesta a las 48 hrs
+              <em>Automated follow-up on unanswered quotes at 48 hours</em></li>
+          <li>Sistema de reseñas de 5 estrellas tras cada trabajo completado
+              <em>5-star review request sent after every completed job</em></li>
+          <li>Actualización mensual de Google Business: fotos y publicación
+              <em>Monthly Google Business update: new photos &amp; post</em></li>
+          <li>Revisión mensual del pipeline (llamada de 15 min)
+              <em>Monthly 15-min pipeline review call</em></li>
+          <li>Campaña de temporada: pre-invierno y arranque de primavera
+              <em>Seasonal campaign: pre-winter prep &amp; spring launch</em></li>
+        </ul>
+        <div class="custom-note">
+          Adaptamos cada servicio a lo que tu negocio necesita — no todo aplica igual para todos.
+          <em>We tailor every step to your business — not every item applies to every contractor.</em>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ═══════════════════════════════════════════════════════ -->
+<section class="how">
+  <div style="text-align:center">
+    <div class="section-title">Cómo Funciona <span class="sep"> / How It Works</span></div>
+    <div class="section-sub">Simple. Rápido. Sin complicaciones. / Simple. Fast. No hassle.</div>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h4>Llamada gratis <em>Free call</em></h4>
+      <p>20 minutos. Nos cuentas de tu negocio. Sin presión. 20 minutes. No pressure.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h4>Diagnóstico <em>Diagnosis</em></h4>
+      <p>Te explicamos qué podemos mejorar y cómo. We explain exactly what we can improve.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h4>Sesión de setup <em>Setup session</em></h4>
+      <p>En 4–6 horas dejamos todo listo. In 4–6 hours everything is ready.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h4>Seguimiento <em>Follow-up</em></h4>
+      <p>Llamada a las 2 semanas. Disponibles por WhatsApp. Available on WhatsApp anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ROI ════════════════════════════════════════════════════════════════ -->
+<section class="roi">
+  <div class="roi-headline">
+    Con un solo trabajo nuevo, el servicio ya se paga solo.
+    <em>Land one new job and this service pays for itself.</em>
+  </div>
+  <div class="roi-sub">
+    La mayoría de contratistas pierden 2–3 trabajos al mes por falta de seguimiento.<br>
+    Most contractors lose 2–3 jobs per month from lack of follow-up.
+  </div>
+  <div class="roi-math">
+    <div class="roi-card">
+      <div class="roi-num">83%</div>
+      <div class="roi-lbl">de dueños latinos necesitan ayuda con tecnología* / of Latino owners need help with tech*</div>
+    </div>
+    <div class="roi-card">
+      <div class="roi-num">50%</div>
+      <div class="roi-lbl">de leads van al primer contratista en responder / of leads go to the first contractor to respond</div>
+    </div>
+    <div class="roi-card">
+      <div class="roi-num">$0</div>
+      <div class="roi-lbl">costo mensual en apps o plataformas para ti / monthly app or platform cost for you</div>
+    </div>
+  </div>
+  <div style="font-size:10px;color:#4A6A9A;margin-top:18px;">* Verizon 2024 Latino Small Business Survey</div>
+</section>
+
+<!-- ══ CTA ════════════════════════════════════════════════════════════════ -->
+<section class="cta">
+  <h2>
+    ¿Listo para empezar?
+    <em>Ready to get started?</em>
+  </h2>
+  <p>
+    Escríbenos por WhatsApp o llámanos — respondemos el mismo día.<br>
+    Message us on WhatsApp or call us — we respond the same day.
+  </p>
+  <div class="cta-btns">
+    <a href="https://wa.me/12036149524?text=Hola,%20me%20interesa%20saber%20m%C3%A1s%20sobre%20Oficio%20Pro" class="wa-btn">
+      <span class="wa-icon">💬</span>
+      <span>WhatsApp</span>
+    </a>
+    <a href="tel:+12036149524" class="call-btn">
+      📞 (203) 614-9524
+    </a>
+  </div>
+  <div class="cta-note">
+    Llamada de diagnóstico gratuita · Sin compromiso · Fairfield CT &amp; Westchester NY<br>
+    Free diagnostic call · No commitment · Fairfield CT &amp; Westchester NY
+  </div>
+</section>
+
+<!-- ══ FOOTER ══════════════════════════════════════════════════════════════ -->
+<footer>
+  <strong style="color:#D0E8E4">Oficio Pro</strong> &nbsp;·&nbsp;
+  <a href="https://oficiopro.work">oficiopro.work</a> &nbsp;·&nbsp;
+  <a href="tel:+12036149524">(203) 614-9524</a> &nbsp;·&nbsp;
+  Fairfield County, CT &amp; Westchester County, NY<br>
+  Servicios bilingues para contratistas / Bilingual services for contractors &nbsp;·&nbsp;
+  <a href="mailto:info@oficiopro.work">info@oficiopro.work</a>
+</footer>
+
+<!-- ══ FLOATING WHATSAPP (mobile) ════════════════════════════════════════ -->
+<a href="https://wa.me/12036149524?text=Hola,%20me%20interesa%20saber%20m%C3%A1s%20sobre%20Oficio%20Pro" class="float-wa" aria-label="WhatsApp">💬</a>
+
+</body>
+</html>
