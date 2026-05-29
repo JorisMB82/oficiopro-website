@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oficio Pro — Organiza. Crece. Gana Más. | Fairfield CT & Westchester NY</title>
-<meta name="description" content="Asesoría bilingüe para contratistas latinos en Fairfield CT y Westchester NY. Organiza tu negocio, consigue más trabajo y crece. Bilingual business support for trades contractors.">
+<title>Oficio Pro — Bilingual Business Support for Contractors | Fairfield CT & Westchester NY</title>
+<meta name="description" content="Bilingual business support for Latino trades contractors in Fairfield CT and Westchester NY. Get organized, win more jobs, and grow. Asesoría bilingüe para contratistas.">
 <meta name="keywords" content="contratistas, landscaping, painting, bilingual, Fairfield CT, Westchester NY, business support, organiza tu negocio">
 <!-- Open Graph -->
 <meta property="og:title" content="Oficio Pro — Organiza. Crece. Gana Más.">
@@ -15,14 +15,14 @@
 <link rel="canonical" href="https://oficiopro.work">
 <style>
   :root {
-    --navy:   #1B3A6B;
-    --teal:   #1A7A6E;
-    --teal-l: #E8F4F2;
-    --mid:    #D0E8E4;
-    --amber:  #F5A623;
-    --amber2: #FEF3CD;
+    --navy:   #1C3D2E;
+    --teal:   #2D6A4F;
+    --teal-l: #EEF5F0;
+    --mid:    #C8DDD0;
+    --amber:  #E07B39;
+    --amber2: #FDEEE4;
     --gray:   #555;
-    --light:  #F9FAFB;
+    --light:  #F7F3EE;
     --white:  #fff;
     --black:  #222;
   }
@@ -60,7 +60,7 @@
   .hero {
     position: relative;
     background:
-      linear-gradient(160deg, rgba(27,58,107,0.88) 0%, rgba(22,70,62,0.84) 100%),
+      linear-gradient(160deg, rgba(28,61,46,0.91) 0%, rgba(45,106,79,0.86) 100%),
       url('https://images.unsplash.com/photo-1761135149034-1d0c084826db?w=1400&q=80&auto=format&fit=crop')
       center/cover no-repeat;
     padding: 64px 24px 52px;
@@ -75,16 +75,23 @@
   }
   .hero > * { position: relative; }
 
-  .logo { font-size: 46px; font-weight: 800; color: var(--white); letter-spacing: -1px; text-shadow: 0 2px 12px rgba(0,0,0,0.3); }
-  .logo span { color: var(--amber); }
-  .logo-badge { display:block; margin: 0 auto 8px; width:100px; height:100px; }
-  .tagline {
-    font-size: 17px; font-weight: 700; color: var(--mid);
-    margin-top: 10px; line-height: 1.6; text-shadow: 0 1px 6px rgba(0,0,0,0.3);
+  .logo-badge { display:block; margin: 0 auto 16px; width:72px; height:72px; }
+  .brand-chip {
+    display: inline-block;
+    background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3);
+    color: var(--white); font-size: 11px; font-weight: 800; letter-spacing: 3.5px;
+    padding: 5px 18px; border-radius: 20px; margin-bottom: 18px;
+    backdrop-filter: blur(4px); text-transform: uppercase;
   }
-  .tagline em {
-    font-size: 13px; font-weight: 400; font-style: italic;
-    color: #FFE5B0; display: block; margin-top: 3px;
+  .brand-chip span { color: var(--amber); }
+  .hero-headline {
+    font-size: 48px; font-weight: 800; color: var(--white);
+    line-height: 1.15; text-shadow: 0 2px 16px rgba(0,0,0,0.35);
+    letter-spacing: -1px;
+  }
+  .hero-headline em {
+    font-size: 18px; font-weight: 400; font-style: italic;
+    color: #FFE5B0; display: block; margin-top: 8px; letter-spacing: 0;
   }
   .geo { color: #FFE5B0; font-size: 12px; margin-top: 12px; letter-spacing: .3px; }
   .free-strip {
@@ -102,12 +109,12 @@
   .hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
   .btn-wa {
     display: inline-flex; align-items: center; gap: 8px;
-    background: #25D366; color: var(--white);
+    background: rgba(0,0,0,0.3); color: var(--white);
+    border: 2px solid rgba(255,255,255,0.35);
     padding: 13px 26px; border-radius: 50px;
     font-size: 14px; font-weight: 700; text-decoration: none;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.25); transition: transform .15s;
+    cursor: default; pointer-events: none; backdrop-filter: blur(4px);
   }
-  .btn-wa:hover { transform: scale(1.04); }
   .btn-call {
     display: inline-flex; align-items: center; gap: 8px;
     background: rgba(255,255,255,0.12); color: var(--white);
@@ -181,7 +188,7 @@
   .why {
     padding: 52px 24px; text-align: center;
     background-color: var(--teal-l);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M 40 0 L 0 0 0 40' fill='none' stroke='%231A7A6E' stroke-width='0.7' stroke-opacity='0.15'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M 40 0 L 0 0 0 40' fill='none' stroke='%232D6A4F' stroke-width='0.7' stroke-opacity='0.15'/%3E%3C/svg%3E");
   }
   .pillars {
     display: flex; flex-wrap: wrap; gap: 16px;
@@ -199,7 +206,10 @@
   .pillar p { font-size: 12px; color: var(--gray); line-height: 1.5; margin-top: 7px; }
 
   /* ── SERVICES ────────────────────────────────────────────────────────── */
-  .services { padding: 52px 24px; background: var(--light); }
+  .services { padding: 52px 24px; background: var(--navy); }
+  .services .section-title { color: var(--white); }
+  .services .section-title .sep { color: var(--mid); }
+  .services .section-sub { color: var(--mid); }
   .services-inner { max-width: 900px; margin: 0 auto; }
   .cards { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 28px; }
   .card {
@@ -262,7 +272,7 @@
   .how {
     padding: 52px 24px; text-align: center;
     background-color: var(--white);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Ccircle cx='11' cy='11' r='1.3' fill='%231A7A6E' fill-opacity='0.1'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Ccircle cx='11' cy='11' r='1.3' fill='%232D6A4F' fill-opacity='0.1'/%3E%3C/svg%3E");
   }
   .steps {
     display: flex; flex-wrap: wrap; gap: 0;
@@ -308,19 +318,39 @@
   .roi-lbl { font-size: 11px; color: var(--mid); margin-top: 5px; line-height: 1.4; }
 
   /* ── CTA ──────────────────────────────────────────────────────────────── */
-  .cta { background: var(--teal); padding: 56px 24px; text-align: center; }
+  .cta {
+    padding: 56px 24px; text-align: center; position: relative;
+    background:
+      linear-gradient(160deg, rgba(28,61,46,0.90) 0%, rgba(45,106,79,0.85) 100%),
+      url('https://images.unsplash.com/photo-1778869290979-6f09567a0eee?w=1400&q=80&auto=format&fit=crop')
+      center/cover no-repeat;
+  }
+  .cta::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.22) 100%);
+    pointer-events: none;
+  }
+  .cta > * { position: relative; }
   .cta h2 { font-size: 26px; font-weight: 800; color: var(--white); line-height: 1.4; }
   .cta h2 em { display: block; font-size: 16px; font-weight: 400; font-style: italic; color: var(--teal-l); margin-top: 4px; }
   .cta p { font-size: 13px; color: var(--teal-l); margin: 10px 0 28px; line-height: 1.6; }
   .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
   .wa-btn {
     display: inline-flex; align-items: center; gap: 10px;
-    background: #25D366; color: var(--white);
+    background: rgba(0,0,0,0.35); color: var(--white);
+    border: 2px solid rgba(255,255,255,0.4);
     padding: 15px 32px; border-radius: 50px;
     font-size: 15px; font-weight: 700; text-decoration: none;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.25); transition: transform .15s, box-shadow .15s;
+    cursor: default; pointer-events: none;
+    backdrop-filter: blur(4px);
   }
-  .wa-btn:hover { transform: scale(1.04); box-shadow: 0 6px 22px rgba(0,0,0,0.3); }
+  .wa-soon {
+    display: inline-block; background: var(--amber); color: #222;
+    font-size: 10px; font-weight: 800; letter-spacing: .5px;
+    padding: 2px 8px; border-radius: 20px; margin-left: 6px;
+    vertical-align: middle;
+  }
   .wa-icon { font-size: 20px; }
   .call-btn {
     display: inline-flex; align-items: center; gap: 8px;
@@ -357,7 +387,7 @@
 
   /* ── RESPONSIVE ───────────────────────────────────────────────────────── */
   @media (max-width: 600px) {
-    .logo { font-size: 36px; }
+    .hero-headline { font-size: 32px; }
     .step:not(:last-child)::after { display: none; }
     .roi-math { flex-direction: column; align-items: center; }
     .testi-grid { flex-direction: column; }
@@ -374,29 +404,27 @@
   <div class="topbar-brand">Oficio<span>Pro</span></div>
   <div class="topbar-contact">
     <a href="tel:+12036149524" class="topbar-phone">📞 (203) 614-9524</a>
-    <a href="https://wa.me/12036149524?text=Hola,%20me%20interesa%20saber%20m%C3%A1s%20sobre%20Oficio%20Pro" class="topbar-wa">
-      💬 WhatsApp
+    <a href="#" class="topbar-wa" style="background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.3); pointer-events:none; cursor:default;">
+      💬 WhatsApp <span class="wa-soon">SOON</span>
     </a>
   </div>
 </nav>
 
 <!-- ══ HERO ══════════════════════════════════════════════════════════════ -->
 <section class="hero">
-  <svg class="logo-badge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" aria-label="Oficio Pro logo">
-    <circle cx="90" cy="90" r="86" fill="#1B3A6B"/>
-    <circle cx="90" cy="90" r="86" fill="none" stroke="#1A7A6E" stroke-width="5"/>
-    <circle cx="90" cy="90" r="78" fill="none" stroke="#1A7A6E" stroke-width="1" opacity="0.3"/>
-    <g transform="translate(28,20) scale(3.2)" stroke="white" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" fill="none">
-      <path d="M7 11v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h3a4 4 0 0 0 4-4V6a2 2 0 0 1 4 0v5h3a2 2 0 0 1 2 2l-1 5a2 3 0 0 1-2 2H9a3 3 0 0 1-3-3"/>
-    </g>
-    <circle cx="144" cy="36" r="14" fill="#F5A623"/>
-    <polyline points="138,36 142,41 151,29" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-    <text x="90" y="148" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="800" fill="white" letter-spacing="3.5">OFICIO</text>
-    <line x1="50" y1="153" x2="130" y2="153" stroke="#1A7A6E" stroke-width="1.5"/>
-    <text x="90" y="168" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="800" fill="#F5A623" letter-spacing="6">PRO</text>
+  <svg class="logo-badge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" aria-label="Oficio Pro logo">
+    <!-- Circle background -->
+    <circle cx="40" cy="40" r="38" fill="#1C3D2E"/>
+    <circle cx="40" cy="40" r="38" fill="none" stroke="#2D6A4F" stroke-width="3"/>
+    <!-- House outline -->
+    <polygon points="40,17 64,34 64,61 16,61 16,34" fill="rgba(255,255,255,0.07)" stroke="white" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Door -->
+    <rect x="30" y="43" width="20" height="18" rx="2" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="2.2"/>
+    <!-- Chimney in terracotta -->
+    <rect x="50" y="19" width="6" height="13" rx="2" fill="#E07B39"/>
   </svg>
-  <div class="logo">Oficio<span>Pro</span></div>
-  <div class="tagline">
+  <div class="brand-chip">Oficio<span>Pro</span></div>
+  <div class="hero-headline">
     Organiza. Crece. Gana Más.
     <em>Get Organized. Grow. Win More.</em>
   </div>
@@ -406,8 +434,8 @@
     <em>All apps and platforms we set up are completely free for you to keep</em>
   </div>
   <div class="hero-ctas">
-    <a href="https://wa.me/12036149524?text=Hola,%20me%20interesa%20saber%20m%C3%A1s%20sobre%20Oficio%20Pro" class="btn-wa">
-      💬 Escríbenos por WhatsApp / Message us
+    <a href="#" class="btn-wa" style="opacity:0.6; pointer-events:none; cursor:default;">
+      💬 Escríbenos por WhatsApp / Message us <span class="wa-soon">SOON</span>
     </a>
     <a href="tel:+12036149524" class="btn-call">
       📞 Llamada gratis / Free call
@@ -528,14 +556,19 @@
       <p>Conocemos Fairfield CT y Westchester NY. We work with you in person or by video.</p>
     </div>
     <div class="pillar">
+      <div class="pillar-icon">🤝</div>
+      <h3>Sin Contratos <em>No Contracts</em></h3>
+      <p>Cancela cuando quieras, sin preguntas. Cancel anytime, no questions asked. No long-term commitment.</p>
+    </div>
+    <div class="pillar">
       <div class="pillar-icon">🤖</div>
       <h3>Tecnología Moderna <em>Modern Tech</em></h3>
       <p>Las herramientas más modernas — gratuitas para ti. All modern tools, free for you to keep.</p>
     </div>
     <div class="pillar">
-      <div class="pillar-icon">💰</div>
-      <h3>Sin Contratos <em>No Contracts</em></h3>
-      <p>Sin compromisos a largo plazo. No long-term commitment. If no results, you don't keep paying.</p>
+      <div class="pillar-icon">📈</div>
+      <h3>En Cualquier Etapa <em>Any Stage</em></h3>
+      <p>Desde contratistas que están empezando hasta los que quieren crecer y formalizarse. From just starting out to ready to scale.</p>
     </div>
   </div>
 </section>
@@ -615,7 +648,10 @@
           <div class="price-main">$250</div>
           <div class="price-sub">por mes / per month</div>
         </div>
-        <div class="price-note">Primer mes con descuento · Sin contratos / First month discounted · No contracts</div>
+        <div class="price-note">
+          Primer mes con descuento · <strong>Cancela cuando quieras, sin preguntas</strong><br>
+          <em>First month discounted · <strong>Cancel anytime, no questions asked</strong></em>
+        </div>
         <div class="includes-title">Qué incluye / What's included:</div>
         <ul class="includes">
           <li>Gestión activa de Thumbtack: respondemos a leads en minutos por ti
@@ -632,8 +668,8 @@
               <em>Seasonal campaign: pre-winter prep &amp; spring launch</em></li>
         </ul>
         <div class="custom-note">
-          Adaptamos cada servicio a lo que tu negocio necesita — no todo aplica igual para todos.
-          <em>We tailor every step to your business — not every item applies to every contractor.</em>
+          Nos enfocamos en aumentar tu visibilidad y tus oportunidades de trabajo — no garantizamos un número específico de clientes nuevos, pero sí garantizamos el trabajo que los consigue. Sin mejoras, cancelas sin penalidad.
+          <em>We focus on increasing your visibility and lead flow — we don't guarantee a specific number of new clients, but we guarantee the work that gets them. No improvement, no obligation.</em>
         </div>
       </div>
 
@@ -709,9 +745,9 @@
     Message us on WhatsApp or call us — we respond the same day.
   </p>
   <div class="cta-btns">
-    <a href="https://wa.me/12036149524?text=Hola,%20me%20interesa%20saber%20m%C3%A1s%20sobre%20Oficio%20Pro" class="wa-btn">
+    <a href="#" class="wa-btn">
       <span class="wa-icon">💬</span>
-      <span>WhatsApp</span>
+      <span>WhatsApp <span class="wa-soon">SOON</span></span>
     </a>
     <a href="tel:+12036149524" class="call-btn">
       📞 (203) 614-9524
@@ -734,7 +770,7 @@
 </footer>
 
 <!-- ══ FLOATING WHATSAPP (mobile) ════════════════════════════════════════ -->
-<a href="https://wa.me/12036149524?text=Hola,%20me%20interesa%20saber%20m%C3%A1s%20sobre%20Oficio%20Pro" class="float-wa" aria-label="WhatsApp">💬</a>
+<a href="#" class="float-wa" style="opacity:0.6; pointer-events:none;" aria-label="WhatsApp coming soon">💬</a>
 
 </body>
 </html>
